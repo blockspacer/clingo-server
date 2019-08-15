@@ -35,6 +35,12 @@ Build requirements
 * Other libraries to provides a REST API with OpenAPI/SwaggerUI support?
 * Catch2 for unit testing
 
+* To install the latest boost on ubuntu you will need to unistall any
+  libboost*-dev files first as they will conflict with the new version. But you
+  can keep any non-dev packages. Then use the PPA from mhier. Here are
+  instructions: https://launchpad.net/~mhier/+archive/ubuntu/libboost-latest
+  Install libboost-1.70-dev.
+
 Worker
 ------
 

@@ -1,0 +1,7 @@
+// IDL for a clingo worker sending an INIT message to the clingo server
+
+
+namespace ClingoServer;
+
+table WorkerStoppedMsg { }
+

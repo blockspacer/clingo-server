@@ -1,0 +1,23 @@
+// Group all the messages that the worker process can send.
+
+
+include "worker_ready_msg.fbs";
+include "application_msg.fbs";
+include "worker_stopped_msg.fbs";
+
+namespace ClingoServer;
+
+
+union Msg {
+   Ready: WorkerReadyMsg,
+   App: ApplicationMsg,
+   Stopped: WorkerStoppedMsg
+}
+
+table Message {
+  worker_instance: string;
+  msg: Msg;
+}
+
+root_type Message;
+

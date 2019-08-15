@@ -1,0 +1,18 @@
+// Schema for the initiator (tcp client) of a connection to send an initiation
+message to a server.
+
+
+namespace ClingoServer;
+
+struct Version {
+  major:ubyte;
+  minor:ubyte;
+  patch:ubtye;
+}
+
+table Init {
+  version:Version;
+}
+
+root_type Init;
+

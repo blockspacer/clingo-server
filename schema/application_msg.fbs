@@ -1,0 +1,10 @@
+// IDL for a clingo worker sending an INIT message to the clingo server
+
+
+namespace ClingoServer;
+
+table ApplicationMsg {
+  appid: uint16;
+  data: [uint8];
+}
+
